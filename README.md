@@ -5,7 +5,7 @@
 ### [NeurIPS 2024] Typicalness-Aware Learning for Failure Detection
 Yijun Liu, Jiequan Cui, Zhuotao Tian*, Senqiao Yang, Qingdong He, Xiaoling Wang, and Jingyong Su*<br>
 
-[Paper]([https://arxiv.org/abs/2411.01981)
+[Paper](https://arxiv.org/abs/2411.01981)
 
 ### Abstract
 Deep neural networks (DNNs) often suffer from the overconfidence issue, where incorrect predictions are made with high confidence scores, hindering the applications in critical systems. In this paper, we propose a novel approach called Typicalness-Aware Learning (TAL) to address this issue and improve failure detection performance. 
