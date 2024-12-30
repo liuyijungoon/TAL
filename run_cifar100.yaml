@@ -1,0 +1,88 @@
+
+
+program: main_tal.py
+
+method: grid
+project: After_Nips
+name: zhengli_TAL
+metric:
+  goal: minimize
+  name: NewFD_aurc
+description: RAW six 
+code_paths:
+  - "main_tal.py"
+
+
+parameters:
+  batch_size:
+    values: [256]
+  method:
+    values: ['fmfp','TAL','fmfp_TAL','openmix','baseline','LogitNorm']
+
+
+  save_path:
+    values: ['./output/']
+  data_path:
+    values: ['/dataset/vshaozuoyu/liuyijun1/data/']
+
+  imagenet_root: 
+    values: ['/dataset/sharedir/research/ImageNet/']
+
+  data: 
+    values: ['cifar100']
+
+
+  model: 
+    values: ['res110']
+
+  scheduler:
+   values: ['cos']
+
+  epochs:
+   values: [200]
+
+  testlast:
+   values: [1]
+
+  weight_decay:
+   values: [0.0005] 
+  T_max:
+   values: [100]   
+
+  T_min:
+   values: [10]    
+  runs:
+   values: [0]   
+  epi:
+   values: [0]  
+  T_k:
+   values: [10]   
+  changeT:
+   values: [2]   
+  rightT:
+   values: [1]   
+  append_right:
+   values: [1] 
+  swa_lr:
+   values: [0.05]
+  confidence_thresh:
+   values: [0.0]
+  append_afterSAM:
+   values: [1]
+  Quan_number:
+   values: [0] 
+  distance_measure:
+   values: ['L2'] 
+
+  T_scale:
+   values: [1]  #
+  lambda_value:
+   values: [1]
+  resume:
+   values: [0] 
+  correct_first:
+   values: [3] 
+  pretrain:
+   values: [0]
+  Qneue_lenghth:
+   values: [30000] 

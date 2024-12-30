@@ -1,0 +1,95 @@
+program: sweep_wrapper.py
+
+method: grid
+project: After_Nips
+name: imagenet_TAL
+metric:
+  goal: minimize
+  name: NewFD_aurc
+description: TAL
+
+parameters:
+  nproc_per_node:
+    values: [4]
+  batch_size:
+    values: [256]
+  method:
+    values: ['TAL']
+
+
+
+
+
+  partially_zero:
+    values: [0]
+
+  save_path:
+    values: ['./output/']
+
+  imagenet_root: 
+    values: ['/dataset/sharedir/research/ImageNet/']
+
+  data: 
+    values: ['imagenet']
+
+ 
+
+  model: 
+    values: ['resnet50']
+
+  scheduler:
+   values: ['steplr']
+
+  epochs:
+   values: [90]
+
+  testlast:
+   values: [0]
+  weight_decay:
+   values: [0.0001] 
+  T_max:
+   values: [100]   
+ 
+  T_min:
+   values: [10]   
+ 
+  runs: 
+   values: [0]   
+  epi:
+   values: [0]  
+  T_k: 
+   values: [10]   
+
+  changeT:
+   values: [2]   
+  rightT:
+   values: [1]   
+  append_right:
+   values: [1] 
+
+  swa_lr:
+   values: [0.05]
+  confidence_thresh:
+   values: [0.0]
+  append_afterSAM:
+   values: [1]
+  Quan_number:
+   values: [0] 
+  distance_measure:
+   values: ['L2'] 
+
+  T_scale:
+   values: [1]  
+  lambda_value:
+   values: [1]
+  autocast:
+   values: [0]     
+
+  correct_first:
+   values: [3] 
+
+  pretrain:
+   values: [0]
+
+  Qneue_lenghth:
+   values: [880880] 
