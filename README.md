@@ -54,3 +54,6 @@ Execute the following command to perform model testing:
 python test.py --weights_path ./output/imagenet_resnet50_TAL_steplr_correct_first3_100_10.0_run1/epoch89/model.pth --fast 1
 ```
 The 'cos' field in the test results represents the final confidence score.
+
+### other
+If you encounter any code issues, please open a GitHub issue.
